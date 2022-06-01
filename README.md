@@ -1,4 +1,4 @@
-# Computational_Genomics_DNASequenceAssembly_Project(BETA)
+# Computational_Genomics_DNASequenceAssembly_Project-V1
 Overlap, Layout, and Multiple Alignment
 
 
