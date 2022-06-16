@@ -14,7 +14,7 @@ public class HBGodev {
 
 	public static void main(String[] args) throws IOException{
 		
-		String[] options= {"Kendim DNA Dizilimi Gireceðim","Rastgele DNA Dizilimi"};
+		String[] options= {"Kendim DNA Dizilimi Girecegim","Rastgele DNA Dizilimi"};
 		String[][] OverlapMatris = new String[N][N];
 		
 		int secim1 = JOptionPane.showOptionDialog(null, "Hangi Islemi Yapmak Istiyorsunuz?","Bir Tusa Basin",JOptionPane.DEFAULT_OPTION, 
@@ -50,11 +50,11 @@ public class HBGodev {
 	public static void bilgisor() {
 		
 		if(G==0)	//DNA dizilimi kullanici tarafindan girildiginde bu alanin sorulmasini engelleyen kosul.
-			G= Integer.parseInt(JOptionPane.showInputDialog("Istediðiniz DNA uzunlugunu giriniz."));
+			G= Integer.parseInt(JOptionPane.showInputDialog("Istediğiniz DNA uzunlugunu giriniz."));
 		
-		N= Integer.parseInt(JOptionPane.showInputDialog("Istediðiniz sekans adedini giriniz."));
-		L= Integer.parseInt(JOptionPane.showInputDialog("Her bir sekansýn uzunlugunu giriniz."));
-		T= Integer.parseInt(JOptionPane.showInputDialog("Skor Matrisinde kabul edilebilecek olan en küçük (T) skorunu giriniz."));
+		N= Integer.parseInt(JOptionPane.showInputDialog("Istediğiniz sekans adedini giriniz."));
+		L= Integer.parseInt(JOptionPane.showInputDialog("Her bir sekansın uzunlugunu giriniz."));
+		T= Integer.parseInt(JOptionPane.showInputDialog("Skor Matrisinde kabul edilebilecek olan en kucuk (T) skorunu giriniz."));
 		
 		while(true) {
 		match= Integer.parseInt(JOptionPane.showInputDialog("Pozitif bir match odulu giriniz."));
@@ -169,7 +169,7 @@ public class HBGodev {
 		int[][] Matris = new int[L][L];
 		int s;
 			
-		//Matrisin ust ucgenindeki skorlamalarýný yapan donguler(k<l icin rk,rl karsilastirmasi). 
+		//Matrisin ust ucgenindeki skorlamalarını yapan donguler(k<l icin rk,rl karsilastirmasi). 
 			for(int m=0;m<N;m++) {
 				for(int t=m+1;t<N;t++) {
 					//Skorlama islemi.
@@ -200,7 +200,7 @@ public class HBGodev {
 				}
 			}
 			
-		//Matrisin alt ucgenindeki skorlamalarýný yapan donguler(k>l icin rk,rl komplement karsilastirmasi). 
+		//Matrisin alt ucgenindeki skorlamalarını yapan donguler(k>l icin rk,rl komplement karsilastirmasi). 
 			for(int m=0;m<N;m++) {
 				for(int t=0;t<m+1;t++) {
 					for(int i=1;i<L;i++) {
@@ -344,7 +344,7 @@ public class HBGodev {
 				System.out.println();	
 			}
 			
-			//Karsilastiracak sekans kalmayýnca sonsuz donguyu sonlandýran kosul.
+			//Karsilastiracak sekans kalmayınca sonsuz donguyu sonlandıran kosul.
 			else
 				break;
 				
